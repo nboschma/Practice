@@ -88,5 +88,4 @@ sub letToNum($)
 	}else{
 		return undef;
 	}
-	
 }
