@@ -48,13 +48,13 @@ CREATE TABLE AccessRecord (
     PRIMARY KEY (cid, lid, accessTime)
 );
 
-insert into Students values (123123121, 'test', 'Computing Science');
-insert into Students values (123123122, 'test', 'Biology');
-insert into Students values (123123123, 'test', 'Computing Science');
-insert into Students values (123123124, 'test', 'Computing Science');
-insert into Students values (123123125, 'test', 'Computing Science');
-insert into Students values (123123126, 'test', 'Chemistry');
-insert into Students values (123123127, 'test', 'Computing Science');
+insert into Students values (123123121, 'test1', 'Computing Science');
+insert into Students values (123123122, 'test2', 'Biology');
+insert into Students values (123123123, 'test3', 'Computing Science');
+insert into Students values (123123124, 'test4', 'Computing Science');
+insert into Students values (123123125, 'test5', 'Computing Science');
+insert into Students values (123123126, 'test6', 'Chemistry');
+insert into Students values (123123127, 'test7', 'Computing Science');
 insert into Students values (123123128, 'John Smith', 'Computing Science');
 
 insert into Labs values ('315', '1150', 'Computing Science', 2525, 'computer lab');
@@ -68,6 +68,7 @@ insert into Labs values ('200', '1150', 'Chemistry', 25, 'computer lab');
 insert into Labs values ('200', '1151', 'Chemistry', 25, 'computer lab');
 insert into Labs values ('200', '1152', 'Chemistry', 25, 'computer lab');
 insert into Labs values ('200', '1153', 'Chemistry', 25, 'computer lab');
+insert into Labs values ('200', '1154', 'Chemistry', 25, 'chem lab');
 
 insert into Locks values ('1231231231', '315', '1150', 'Good');
 insert into Locks values ('1231231212', '315', '1150', 'Good');
@@ -77,6 +78,7 @@ insert into Locks values ('1231231234', '100', '1150', 'Good');
 insert into Locks values ('1231231235', '100', '1151', 'Good');
 insert into Locks values ('1231231236', '100', '1152', 'Good');
 insert into Locks values ('1231231237', '100', '1153', 'Good');
+insert into Locks values ('1231231213', '100', '1153', 'Good');
 insert into Locks values ('1231231238', '200', '1150', 'Good');
 insert into Locks values ('1231231239', '200', '1151', 'Good');
 insert into Locks values ('1231231210', '200', '1152', 'Good');
@@ -92,6 +94,7 @@ insert into Cardkeys values ('AAAAAAAAAAAAAAAG', '123123127');
 insert into Cardkeys values ('AAAAAAAAAAAAAAAH', '123123128');
 
 insert into Authorization values ('AAAAAAAAAAAAAAAA', '315', '1150', '08-08-2017');
+insert into Authorization values ('AAAAAAAAAAAAAAAA', '315', '1151', '08-08-2017');
 insert into Authorization values ('AAAAAAAAAAAAAAAB', '315', '1151', '08-08-2017');
 insert into Authorization values ('AAAAAAAAAAAAAAAC', '315', '1152', '08-08-2017');
 insert into Authorization values ('AAAAAAAAAAAAAAAD', '100', '1150', '08-08-2017');
@@ -99,6 +102,7 @@ insert into Authorization values ('AAAAAAAAAAAAAAAE', '100', '1151', '08-08-2017
 insert into Authorization values ('AAAAAAAAAAAAAAAF', '100', '1152', '08-08-2017');
 insert into Authorization values ('AAAAAAAAAAAAAAAG', '200', '1150', '08-08-2017');
 insert into Authorization values ('AAAAAAAAAAAAAAAH', '200', '1151', '08-08-2017');
+insert into Authorization values ('AAAAAAAAAAAAAAAH', '315', '1150', '08-08-2017');
 
 insert into AccessRecord values ('AAAAAAAAAAAAAAAA', '1231231231', '07-07-2017', 'good');
 insert into AccessRecord values ('AAAAAAAAAAAAAAAB', '1231231232', '07-07-2017', 'good');
