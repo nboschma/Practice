@@ -1,3 +1,9 @@
+--Datebase to test Assghnment 2 queries
+--To load tables and data do the following from the command line
+-- sqlite3
+-- .read schema.sql
+
+
 CREATE TABLE Students (
     sno CHAR(9) PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
